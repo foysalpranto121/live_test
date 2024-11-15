@@ -20,6 +20,7 @@ class DonateBloodScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Need Blood'),
+        centerTitle: true,
         backgroundColor: Colors.red,
 
         actions: [
@@ -40,13 +41,10 @@ class DonateBloodScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                padding: EdgeInsets.all(20.0),
-                decoration: BoxDecoration(
-                  color: Colors.grey[600],
+              CircleAvatar(
+                radius: 60.00,
+                backgroundColor: Colors.grey.shade600,
 
-                  shape: BoxShape.circle,
-                ),
                 child: Icon(
                   Icons.bloodtype_outlined ,
                   color: Colors.red,
